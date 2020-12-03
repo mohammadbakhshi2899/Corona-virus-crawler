@@ -62,7 +62,7 @@ class MySpider(scrapy.Spider):
 
 
 
-        f = open("Statics\DB\CoronaDB.dat", "wb")
+        f = open("statics\DB\CoronaDB.dat", "wb")
         pickle.dump(coronavirusCases, f)
         pickle.dump(coronavirusCasesDeath, f)
         pickle.dump(coronavirusCasesRecovered, f)

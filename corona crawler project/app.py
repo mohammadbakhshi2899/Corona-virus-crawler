@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import matplotlib
+import RunSpider
 
 app = Flask(__name__, static_folder="Statics")
 
@@ -7,8 +8,8 @@ app = Flask(__name__, static_folder="Statics")
 def crawlInfo():
 
     # running spider
-
-
+    RunSpider.runSpider()
+    
     # Read information
 
 
